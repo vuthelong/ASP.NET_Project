@@ -127,7 +127,3 @@ CREATE TABLE NHANVIEN
 	FOREIGN KEY (USERNAME) REFERENCES TAIKHOAN (USERNAME),
 )
 GO
-create table test
-(
-test1 int primary key,
-)
