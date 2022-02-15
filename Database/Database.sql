@@ -130,5 +130,5 @@ GO
 
 CREATE TABLE TEST
 (
-	MaTest int primary key nott null,
+	MaTest int primary key not null,
 )
