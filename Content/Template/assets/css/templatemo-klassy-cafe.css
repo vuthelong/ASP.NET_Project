@@ -1,4 +1,5 @@
 /*
+/*
 
 TemplateMo 558 Klassy Cafe
 
@@ -1468,7 +1469,7 @@ footer
 */
 
 footer {
-  margin-top: 60px;
+  margin-top: 0px;
   padding: 50px 0px;
   background-color: #fb5849;
 }
@@ -1490,7 +1491,7 @@ footer .right-text-content p {
 
 footer .right-text-content {
   text-align: left;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 footer .logo {
