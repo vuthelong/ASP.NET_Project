@@ -147,7 +147,6 @@
     <Compile Include="Models\DONHANG.cs" />
     <Compile Include="Models\KHACHHANG.cs" />
     <Compile Include="Models\LIENHE.cs" />
-    <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\NGUYENLIEU.cs" />
     <Compile Include="Models\NHACUNGCAP.cs" />
     <Compile Include="Models\NHANVIEN.cs" />
