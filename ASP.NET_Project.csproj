@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,10 +129,31 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CHITIETDONHANGsController.cs" />
+    <Compile Include="Controllers\DONHANGsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KHACHHANGsController.cs" />
+    <Compile Include="Controllers\LIENHEsController.cs" />
+    <Compile Include="Controllers\NGUYENLIEUxController.cs" />
+    <Compile Include="Controllers\NHACUNGCAPsController.cs" />
+    <Compile Include="Controllers\NHANVIENsController.cs" />
+    <Compile Include="Controllers\PHANLOAIsController.cs" />
+    <Compile Include="Controllers\SANPHAMsController.cs" />
+    <Compile Include="Controllers\TAIKHOANsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CHITIETDONHANG.cs" />
+    <Compile Include="Models\DONHANG.cs" />
+    <Compile Include="Models\KHACHHANG.cs" />
+    <Compile Include="Models\LIENHE.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\NGUYENLIEU.cs" />
+    <Compile Include="Models\NHACUNGCAP.cs" />
+    <Compile Include="Models\NHANVIEN.cs" />
+    <Compile Include="Models\PHANLOAI.cs" />
+    <Compile Include="Models\SANPHAM.cs" />
+    <Compile Include="Models\TAIKHOAN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -240,10 +263,59 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\CHITIETDONHANGs\Create.cshtml" />
+    <Content Include="Views\CHITIETDONHANGs\Delete.cshtml" />
+    <Content Include="Views\CHITIETDONHANGs\Details.cshtml" />
+    <Content Include="Views\CHITIETDONHANGs\Edit.cshtml" />
+    <Content Include="Views\CHITIETDONHANGs\Index.cshtml" />
+    <Content Include="Views\DONHANGs\Create.cshtml" />
+    <Content Include="Views\DONHANGs\Delete.cshtml" />
+    <Content Include="Views\DONHANGs\Details.cshtml" />
+    <Content Include="Views\DONHANGs\Edit.cshtml" />
+    <Content Include="Views\DONHANGs\Index.cshtml" />
+    <Content Include="Views\KHACHHANGs\Create.cshtml" />
+    <Content Include="Views\KHACHHANGs\Delete.cshtml" />
+    <Content Include="Views\KHACHHANGs\Details.cshtml" />
+    <Content Include="Views\KHACHHANGs\Edit.cshtml" />
+    <Content Include="Views\KHACHHANGs\Index.cshtml" />
+    <Content Include="Views\LIENHEs\Create.cshtml" />
+    <Content Include="Views\LIENHEs\Delete.cshtml" />
+    <Content Include="Views\LIENHEs\Details.cshtml" />
+    <Content Include="Views\LIENHEs\Edit.cshtml" />
+    <Content Include="Views\LIENHEs\Index.cshtml" />
+    <Content Include="Views\NGUYENLIEUx\Create.cshtml" />
+    <Content Include="Views\NGUYENLIEUx\Delete.cshtml" />
+    <Content Include="Views\NGUYENLIEUx\Details.cshtml" />
+    <Content Include="Views\NGUYENLIEUx\Edit.cshtml" />
+    <Content Include="Views\NGUYENLIEUx\Index.cshtml" />
+    <Content Include="Views\NHACUNGCAPs\Create.cshtml" />
+    <Content Include="Views\NHACUNGCAPs\Delete.cshtml" />
+    <Content Include="Views\NHACUNGCAPs\Details.cshtml" />
+    <Content Include="Views\NHACUNGCAPs\Edit.cshtml" />
+    <Content Include="Views\NHACUNGCAPs\Index.cshtml" />
+    <Content Include="Views\NHANVIENs\Create.cshtml" />
+    <Content Include="Views\NHANVIENs\Delete.cshtml" />
+    <Content Include="Views\NHANVIENs\Details.cshtml" />
+    <Content Include="Views\NHANVIENs\Edit.cshtml" />
+    <Content Include="Views\NHANVIENs\Index.cshtml" />
+    <Content Include="Views\PHANLOAIs\Create.cshtml" />
+    <Content Include="Views\PHANLOAIs\Delete.cshtml" />
+    <Content Include="Views\PHANLOAIs\Details.cshtml" />
+    <Content Include="Views\PHANLOAIs\Edit.cshtml" />
+    <Content Include="Views\PHANLOAIs\Index.cshtml" />
+    <Content Include="Views\SANPHAMs\Create.cshtml" />
+    <Content Include="Views\SANPHAMs\Delete.cshtml" />
+    <Content Include="Views\SANPHAMs\Details.cshtml" />
+    <Content Include="Views\SANPHAMs\Edit.cshtml" />
+    <Content Include="Views\SANPHAMs\Index.cshtml" />
+    <Content Include="Views\TAIKHOANs\Create.cshtml" />
+    <Content Include="Views\TAIKHOANs\Delete.cshtml" />
+    <Content Include="Views\TAIKHOANs\Details.cshtml" />
+    <Content Include="Views\TAIKHOANs\Edit.cshtml" />
+    <Content Include="Views\TAIKHOANs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

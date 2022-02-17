@@ -1,0 +1,42 @@
+﻿@model ASP.NET_Project.Models.LIENHE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LIENHE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChiLH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiLH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLH }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
