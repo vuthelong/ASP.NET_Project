@@ -294,6 +294,7 @@ INSERT INTO TAIKHOAN(Username, Password, HoTen, PhanQuyen) VALUES('sangttt','1',
 GO
 INSERT INTO TAIKHOAN(Username, Password, HoTen, PhanQuyen) VALUES('sondh','1',N'Đỗ Hồng Sơn', N'Admin')
 GO
+select * from TAIKHOAN
 --Khach hang
 INSERT INTO TAIKHOAN(Username, Password, HoTen, PhanQuyen) VALUES('kh1','1','Long', N'Khách hàng')
 GO

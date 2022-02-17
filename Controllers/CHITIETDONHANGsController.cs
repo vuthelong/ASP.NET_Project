@@ -10,6 +10,7 @@ using ASP.NET_Project.Models;
 
 namespace ASP.NET_Project.Controllers
 {
+    //them comment
     public class CHITIETDONHANGsController : Controller
     {
         private Model1 db = new Model1();
